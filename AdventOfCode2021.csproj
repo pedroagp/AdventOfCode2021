@@ -6,7 +6,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.Collections" Version="4.3.0" />
+      <None Remove=".gitattributes" />
+      <None Remove=".gitignore" />
+      <None Remove="README.md" />
     </ItemGroup>
 
     <ItemGroup>
