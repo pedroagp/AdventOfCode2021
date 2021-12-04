@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Collections" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Day01\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day02\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day03\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day04\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day05\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day06\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day07\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day08\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day09\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day10\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day11\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day12\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day13\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day14\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day15\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day16\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day17\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day18\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day19\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day20\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day21\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day22\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day23\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day24\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day25\input.txt" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+</Project>
