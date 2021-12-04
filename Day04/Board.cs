@@ -10,6 +10,7 @@ namespace AdventOfCode2021.Day04 {
             Check = false;
         }
     }
+
     internal class Board {
         public bool winner = false;
         public BingoNumber[,] board = new BingoNumber[5, 5];
@@ -57,5 +58,18 @@ namespace AdventOfCode2021.Day04 {
                 return false;
             }
         }
+
+        public static string GetBoardAnswer(Board board, int ball) {
+            var sumOfMissedNumbers = 0;
+
+            foreach (BingoNumber number in board.board) {
+                if (!number.Check) {
+                    sumOfMissedNumbers += number.Value;
+                }
+            }
+
+            return $"{sumOfMissedNumbers * ball}";
+        }
+
     }
 }

@@ -38,23 +38,11 @@ namespace AdventOfCode2021.Challenges {
                 foreach (Board board in boards) {
                     board.CheckNumber(ball);
                     if (board.HasBingo) {
-                        return GetBoardAnswer(board, ball);
+                        return Board.GetBoardAnswer(board, ball);
                     }
                 }
             }
             return default;
-        }
-
-        private string GetBoardAnswer(Board board, int ball) {
-            var sumOfMissedNumbers = 0;
-
-            foreach (BingoNumber number in board.board) {
-                if (!number.Check) {
-                    sumOfMissedNumbers += number.Value;
-                }
-            }
-
-            return $"{sumOfMissedNumbers * ball}";
         }
 
         public override string SecondResult() {
@@ -76,7 +64,7 @@ namespace AdventOfCode2021.Challenges {
                 }
             }
             if(winnerBoard is not null && winnerBall != -1) {
-                return GetBoardAnswer(winnerBoard, winnerBall);
+                return Board.GetBoardAnswer(winnerBoard, winnerBall);
             }
             return default;
         }
