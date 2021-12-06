@@ -9,7 +9,7 @@ namespace AdventOfCode2021.Challenges {
 
         public Day01() {
             if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName)).Select(x => int.Parse(x)).ToArray();
+                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName)).Select(int.Parse).ToArray();
             }
         }
 

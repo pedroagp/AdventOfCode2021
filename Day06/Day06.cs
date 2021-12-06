@@ -7,13 +7,13 @@ using System.Linq;
 namespace AdventOfCode2021.Challenges {
     internal class Day06 : Challenge {
         private readonly string[] input;
-        private Dictionary<int, long> fish;
+        private readonly Dictionary<int, long> fish;
 
         public Day06() {
             if (input is null) {
                 input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
             }
-            if (fish == null) {
+            if (fish is null) {
                 fish = input.First().Split(',').Select(int.Parse).GroupBy(x => x).ToDictionary(x=> x.Key, x=> (long)x.Count());
                 fish.Add(7, 0);
                 fish.Add(8, 0);
@@ -24,30 +24,25 @@ namespace AdventOfCode2021.Challenges {
 
         public override string FirstResult() {
             for(int i= 0; i<80; i++) {
-                fish = ProcessFish();
+                ProcessFish();
             }
             return $"{fish.Values.Sum()}";
         }
 
-        private Dictionary<int, long> ProcessFish() {
-            var tempFish = new Dictionary<int, long>() {
-                [0] = fish[1],
-                [1] = fish[2], 
-                [2] = fish[3],
-                [3] = fish[4],
-                [4] = fish[5],
-                [5] = fish[6],
-                [6] = fish[7] + fish[0],
-                [7] = fish[8],
-                [8] = fish[0],
-            };
+        private void ProcessFish() {
+            var temp = fish[0];
 
-            return tempFish;
+            for (int i = 0; i < fish.Keys.Count-1; i++) {
+                fish[i] = fish[i + 1];
+            }
+
+            fish[8] = temp;
+            fish[6]+= temp;
         }
 
         public override string SecondResult() {
             for (int i = 80; i < 256; i++) {
-                fish = ProcessFish();
+                ProcessFish();
             }
             return $"{fish.Values.Sum()}";
         }

@@ -8,8 +8,8 @@ using System.Linq;
 namespace AdventOfCode2021.Challenges {
     internal class Day04 : Challenge {
         private readonly string[] input;
-        private Queue<int> balls;
-        private List<Board> boards;
+        private readonly Queue<int> balls;
+        private readonly List<Board> boards;
 
         public Day04() {
             if (input is null) {
@@ -17,7 +17,7 @@ namespace AdventOfCode2021.Challenges {
             }
             if (balls is null) {
                 balls = new Queue<int>();
-                foreach (int number in input[0].Split(',').Select(x => int.Parse(x))) {
+                foreach (int number in input[0].Split(',').Select(int.Parse)) {
                     balls.Enqueue(number);
                 }
             }

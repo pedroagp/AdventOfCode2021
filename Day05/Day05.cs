@@ -23,7 +23,7 @@ namespace AdventOfCode2021.Challenges {
             foreach (string line in input) {
                 int[] coords = Regex.Matches(line, @"\d+").Select(x => int.Parse(x.Value)).ToArray();
                 if (Utils.IsStraightLine(coords)) { 
-                    mapOceanFloor(coords);
+                    MapOceanFloor(coords);
                 }
             }
 
@@ -39,7 +39,7 @@ namespace AdventOfCode2021.Challenges {
             return $"{count}";
         }
 
-        private void mapOceanFloor(int[] coords) {
+        private void MapOceanFloor(int[] coords) {
             int x1, x2, y1, y2;
             x1 = coords[0]; 
             y1 = coords[1];
@@ -62,7 +62,7 @@ namespace AdventOfCode2021.Challenges {
             foreach (string line in input) {
                 int[] coords = Regex.Matches(line, @"\d+").Select(x => int.Parse(x.Value)).ToArray();
                 if (!Utils.IsStraightLine(coords)) { 
-                    mapOceanFloor(coords);
+                    MapOceanFloor(coords);
                 }
             }
 
