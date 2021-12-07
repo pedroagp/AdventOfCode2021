@@ -6,6 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Compile Remove="Day25\**" />
+      <EmbeddedResource Remove="Day25\**" />
+      <None Remove="Day25\**" />
+    </ItemGroup>
+
+    <ItemGroup>
       <None Remove=".gitattributes" />
       <None Remove=".gitignore" />
       <None Remove="README.md" />
@@ -18,7 +24,13 @@
         <None Update="Day04\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day05\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day06\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day07\example.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
         <None Update="Day07\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day08\example.txt">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
         <None Update="Day08\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day09\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day10\input.txt" CopyToOutputDirectory="PreserveNewest" />
@@ -36,7 +48,6 @@
         <None Update="Day22\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day23\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day24\input.txt" CopyToOutputDirectory="PreserveNewest" />
-        <None Update="Day25\input.txt" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
 </Project>

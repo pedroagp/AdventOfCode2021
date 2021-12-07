@@ -7,14 +7,10 @@ using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day04 : Challenge {
-        private readonly string[] input;
         private readonly Queue<int> balls;
         private readonly List<Board> boards;
 
-        public Day04() {
-            if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
-            }
+        public Day04(bool testInput = false) : base(testInput) {
             if (balls is null) {
                 balls = new Queue<int>();
                 foreach (int number in input[0].Split(',').Select(int.Parse)) {

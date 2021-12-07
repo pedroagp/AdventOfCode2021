@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day01 : Challenge {
-        private readonly int[] input;
+        private new readonly int[] input;
 
-        public Day01() {
+        public Day01(bool testInput = false) : base(testInput) {
             if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName)).Select(int.Parse).ToArray();
+                input = base.input.Select(int.Parse).ToArray();
             }
         }
 

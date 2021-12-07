@@ -6,13 +6,9 @@ using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day06 : Challenge {
-        private readonly string[] input;
         private readonly Dictionary<int, long> fish;
 
-        public Day06() {
-            if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
-            }
+        public Day06(bool testInput = false) : base(testInput) {
             if (fish is null) {
                 fish = input.First().Split(',').Select(int.Parse).GroupBy(x => x).ToDictionary(x=> x.Key, x=> (long)x.Count());
                 fish.Add(7, 0);

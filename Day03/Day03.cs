@@ -6,13 +6,7 @@ using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day03 : Challenge {
-        private readonly string[] input;
-
-        public Day03() {
-            if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
-            }
-        }
+        public Day03(bool testInput = false) : base(testInput) { }
 
         public override string FirstResult() {
             string gamma = string.Empty, epsilon = string.Empty;

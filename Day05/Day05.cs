@@ -7,13 +7,9 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day05 : Challenge {
-        private readonly string[] input;
         private readonly int[,] oceanFloor;
 
-        public Day05() {
-            if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
-            }
+        public Day05(bool testInput = false) : base(testInput) {
             if(oceanFloor is null) {
                 oceanFloor = new int[1000, 1000]; 
             }

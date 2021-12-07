@@ -6,11 +6,11 @@ using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day07 : Challenge {
-        private readonly int[] input;
+        private new readonly int[] input;
 
-        public Day07() {
+        public Day07(bool testInput = false) : base(testInput) {
             if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName))[0].Split(',').Select(int.Parse).ToArray();
+                input = base.input.First().Split(',').Select(int.Parse).ToArray();
                 Array.Sort(input);
             }
         }

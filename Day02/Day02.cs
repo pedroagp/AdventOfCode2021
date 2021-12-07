@@ -3,13 +3,8 @@ using System.IO;
 
 namespace AdventOfCode2021.Challenges {
     internal class Day02 : Challenge {
-        private readonly string[] input;
 
-        public Day02() {
-            if (input is null) {
-                input = File.ReadAllLines(Path.Combine(this.GetType().Name, Constants.DefaultFileName));
-            }
-        }
+        public Day02(bool testInput = false) : base(testInput) {}
 
         public override string FirstResult() {
             var horizontal = 0;
