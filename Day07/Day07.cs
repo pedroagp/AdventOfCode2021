@@ -18,10 +18,10 @@ namespace AdventOfCode2021.Challenges {
         public override string FirstResult() {
             var cost = int.MaxValue;
 
-            for (int i = input[0]; i < input[input.Length - 1]; i++) {
+            for (int i = 0; i < input.Length; i++) {
                 var tmp = 0;
                 for(int j = 0; j < input.Length; j++){
-                    tmp += Math.Abs(input[j]-i);
+                    tmp += Math.Abs(input[j]-input[i]);
                 }
                 
                 if (tmp < cost) cost = tmp;
@@ -42,10 +42,10 @@ namespace AdventOfCode2021.Challenges {
                 costs[i] = i + costs[i - 1];
             }
 
-            for (int i = input[0]; i < input[input.Length - 1]; i++) {
+            for (int i = 0; i < input.Length; i++) {
                 var tmp = 0;
                 for (int j = 0; j < input.Length; j++) {
-                    tmp += costs[Math.Abs(input[j] - i)];
+                    tmp += costs[Math.Abs(input[j] - input[i])];
                 }
                 if (tmp < cost) cost = tmp;
             }
