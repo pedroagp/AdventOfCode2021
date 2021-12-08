@@ -5,8 +5,8 @@ using System.IO;
 using System.Linq;
 
 namespace AdventOfCode2021.Challenges {
-    internal class DayXX : Challenge {
-        public DayXX(bool testInput = false) : base(testInput) { }
+    internal class Day09 : Challenge {
+        public Day09(bool testInput = false) : base(testInput) { }
 
         public override string FirstResult() {
 

@@ -26,7 +26,6 @@ namespace AdventOfCode2021.Challenges {
                 
                 if (tmp < cost) cost = tmp;
             }
-     
 
             return $"{cost}";
         }
@@ -49,7 +48,6 @@ namespace AdventOfCode2021.Challenges {
                 }
                 if (tmp < cost) cost = tmp;
             }
-
 
             return $"{cost}";
         }
