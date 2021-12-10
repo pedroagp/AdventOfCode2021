@@ -24,32 +24,41 @@
         <None Update="Day04\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day05\input.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day06\input.txt" CopyToOutputDirectory="PreserveNewest" />
-        <None Update="Day07\example.txt">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
+        <None Update="Day07\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day07\input.txt" CopyToOutputDirectory="PreserveNewest" />
-        <None Update="Day08\example.txt">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
+        <None Update="Day08\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day08\input.txt" CopyToOutputDirectory="PreserveNewest" />
-        <None Update="Day09\example.txt">
-          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-        </None>
+        <None Update="Day09\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day09\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day10\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day10\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day11\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day11\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day12\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day12\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day13\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day13\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day14\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day14\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day15\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day15\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day16\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day16\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day17\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day17\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day18\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day18\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day18\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day19\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day20\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day20\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day21\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day21\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day22\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day22\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day23\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day23\input.txt" CopyToOutputDirectory="PreserveNewest" />
+        <None Update="Day24\example.txt" CopyToOutputDirectory="PreserveNewest" />
         <None Update="Day24\input.txt" CopyToOutputDirectory="PreserveNewest" />
     </ItemGroup>
 
