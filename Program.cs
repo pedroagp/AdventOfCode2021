@@ -15,7 +15,8 @@ var challenges = new List<Challenge> {
     new Day10(), 
     new Day11(),
     new Day12(),
-    new Day13(true),
+    new Day13(),
+    new Day14(true),
 };
 
 foreach (var challenge in challenges) {
