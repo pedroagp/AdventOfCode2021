@@ -27,13 +27,13 @@ namespace AdventOfCode2021.Challenges {
         }
 
         public override string FirstResult() {
-            return $"{Dijkstra(graph)}";
+            return $"{Dijkstra(graph, new Coord(0,0), new Coord(intput.Length-1,intput[^1].Length-1))}";
         }
 
 
         public override string SecondResult() {
             BlowUpGraph(5);
-            return $"{Dijkstra(graph)}";
+            return $"{Dijkstra(graph, new Coord(0, 0), new Coord(5*intput.Length - 1, 5*intput[^1].Length-1))}";
         }
 
         private void BlowUpGraph(int size) {
@@ -56,10 +56,7 @@ namespace AdventOfCode2021.Challenges {
             }
         }
 
-        int Dijkstra(Dictionary<Coord, int> graph) {
-            var start = new Coord(0, 0);
-            var end = new Coord(graph.Keys.MaxBy(p => p.x).x, graph.Keys.MaxBy(p => p.y).y);
-
+        int Dijkstra(Dictionary<Coord, int> graph, Coord start, Coord end) {
             var queue = new PriorityQueue<Coord, int>();
             var pathCosts = new Dictionary<Coord, int> {
                 [start] = 0
